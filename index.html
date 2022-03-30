@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                font-family: sans-serif;
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+            label{
+                font-size: 18px;
+                display: block;
+                padding-bottom: 10px;
+            }
+            input,textarea,select{
+                display: block;
+                width: 100%;
+                padding-bottom: 20px;
+            }
+            
+            form{
+                background-color: #cc0000;
+                padding: 40px 40px 40px 40px;
+            }
+            
+            input[type=checkbox]:not(old) + label,
+            input[type=radio]:not(old) + label{
+                display:  inline-block;
+                margin-left: -28px;
+                padding-left: 28px;
+            }
+            #button-area{
+                float: left;
+                width: 50%;
+                height: 50%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1 id="title">Tell Me About Music</h1>
+        <p id="description">this is a survey form</p>
+        <form id="survey-form">
+            <label id="name-lable"> Name:</label>  
+            <input type="text" name="name" id="name-lable" required placeholder="FirstNumber"><br>
+            <label id="name-lable"> Email:</label>  
+            <input type="email" name="email" id="email-lable" required placeholder="EmailAddress"><br>
+            <label id="name-lable"> Number:</label>  
+             <input type="number" name="number" id="number-lable" min="0" max="10" required placeholder="$"><br>
+             
+             <label id="guitar-type-lable"> GuitarType</label>  
+             <select name="quiters" id="dropdown">
+                <option value="fender">Fender</option>
+                <option value="martin">Martin</option>
+                <option value="epiphone">Epiphone</option>
+                <option value="other">Other</option>
+              </select><br>
+
+              <label id="additional-commond"> Additional Comments</label>  
+              <textarea  placeholder="Additional Comments"></textarea><br> 
+ 
+              <div id="button-area">
+                <label id="ticnologies-lable"> Tecnologies Types</label>  
+                <input class="radio-inline" type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input class="radio-inline" type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input class="radio-inline" type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+              </div>
+            
+                <div id="button-area">
+                    <label id="transportation-lable"> Transportation Types</label>  
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label>
+                </div>
+                <br>
+
+            <input type="submit" id="submet">
+        </form>
+    <script type="text/javascropt" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
